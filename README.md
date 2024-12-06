@@ -28,5 +28,5 @@ This webpage was created as part of an assignment for the Spacio Techtonics inte
 ### **7. Seventh Page**
 <img width="1512" alt="Screenshot 2024-12-06 at 10 26 48 AM" src="https://github.com/user-attachments/assets/8f318d91-76e5-4d06-97e7-d2d5f6cd1a35">
 
-### **4. Footer Block**
+### **8. Footer Block**
 <img width="1512" alt="Screenshot 2024-12-06 at 10 27 25 AM" src="https://github.com/user-attachments/assets/23e6f802-5caf-4947-8789-365ee225540f">
