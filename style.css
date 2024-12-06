@@ -1,0 +1,1188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-page {
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-bar {
+    height: calc(5vw + 50px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-bar-logo {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-logo h1 {
+    font-size: clamp(5px, 2vw, 120%);
+    line-height: 100%;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.trademark::after {
+    content: "™";
+    font-size: 100%;
+    vertical-align: super;
+    margin-left: 2px;
+    font-weight: 300;
+}
+
+.nav-bar-logo img {
+    height: 100%;
+}
+
+.nav-bar-items {
+    height: 80%;
+    min-width: 60%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.nav-bar-items li {
+    list-style-type: none;
+    font-size: clamp(1px, 1.5vw, 120%);
+    cursor: pointer;
+}
+
+.nav-bar-items li button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: none;
+    background-color: rgb(0, 74, 173);
+    color: white;
+    border-radius: 50px;
+    font-size: clamp(1px, 1vw, 120%);
+}
+
+.nav-bar-items li i {
+    font-size: clamp(20px, 4vw, 250%);
+}
+
+.first-main-page {
+    height: calc(15vw + 500px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-main-page::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/image1.png');
+    background-size: cover;
+    background-position: center;
+    filter: opacity(20%);
+    z-index: 0;
+}
+
+.fp-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.fp-lft-block {
+    height: 100%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    align-items: flex-start;
+}
+
+.fp-lft-block h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.fp-lft-block button {
+    margin-top: 40px;
+    background-color: rgb(0, 74, 173);
+    border-style: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.span-1 {
+    font-weight: 650;
+    font-style: italic;
+}
+
+.span-2 {
+    font-weight: 650;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.fp-rght-block {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5vw;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.fp-footer-block {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.fp-footer-block p {
+    font-size: 12px;
+}
+
+.second-page {
+    /* height: 90vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sp-header-block {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding-left: 8vw;
+}
+
+.sp-header-block h1 {
+    font-family: "Raleway", sans-serif;
+    border-left-style: solid;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 4px;
+    border-color: rgb(255, 49, 49);
+}
+
+.sp-blocks {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sp-lft-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 8vw;
+    padding-bottom: 30px;
+}
+
+.sp-lft-block button {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+    width: 250px;
+    justify-content: space-around;
+    padding: 15px;
+    border-radius: 25px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sp-lft-block button p {
+    text-align: left;
+    margin: 0;
+    font-size: 22px;
+}
+
+.sp-lft-block button i {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sp-rght-block {
+    width: 50%;
+    padding-right: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sp-rght-block p {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 18px;
+}
+
+.sp-rght-block p span {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.sp-footer-block {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.sp-footer-block p {
+    font-size: 12px;
+}
+
+.third-page {
+    height: 90vh;
+    width: 100%;
+    background-image: url(assets/Spacio\ TechTonics\ Consultancy\ V21.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.tp-main-page {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.tp-side-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tp-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 60px;
+}
+
+.tp-body p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    line-height: 7vw;
+    font-weight: 500;
+    font-size: 8vw;
+}
+
+.tp-main-page i {
+    color: white;
+    font-size: 9vw;
+}
+
+.tp-footer-block {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tp-footer-block p {
+    color: white;
+    font-size: 12px;
+}
+
+.fourth-page {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-page::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/fourth-page-main-image.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: opacity(8%);
+    z-index: 0;
+}
+
+.fop-main-page {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 5;
+}
+
+.fop-lft-block {
+    height: 100%;
+    width: 50%;
+    padding-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fop-sub-block {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.fop-h1 {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 48px;
+    padding: 10px;
+    border-left-style: solid;
+    padding-left: 15px;
+    border-color: rgb(255, 49, 49);
+    border-width: 4px;
+}
+
+.fop-p-1 {
+    font-size: 20px;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.fop-lft-block ul {
+    padding-left: 50px;
+}
+
+.fop-lft-block ul li {
+    font-size: 20px;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.fop-sub-block h1 {
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.fop-sb-1 {
+    height: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fop-sb-2 {
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub-arrow-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-arrow-block p {
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.sub-arrow-block i {
+    transform: rotate(315deg);
+    font-size: 25px;
+}
+
+.fop-rght-block {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.fop-rght-block img {
+    height: 100%;
+}
+
+.fop-footer-block {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fop-footer-block p {
+    font-size: 12px;
+}
+
+.fift-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fift-header-block {
+    height: 20vh;
+    padding-left: 8vw;
+    padding-right: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.fift-body {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8vw;
+    padding-right: 4vw;
+}
+
+.fift-footer-block {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.fip-h1 {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 48px;
+    padding: 10px;
+    border-left-style: solid;
+    padding-left: 15px;
+    border-color: rgb(255, 49, 49);
+    border-width: 4px;
+    font-weight: 400;
+}
+
+.fip-view-block {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fip-view-block i{
+    transform: rotate(315deg);
+}
+
+.l-work-block-1 {
+    height: 100%;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-work-block-p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 15px;
+    padding-left: 40px;
+    margin: 0;
+}
+
+.l-work-block-2 {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-work-1 {
+    flex-grow:1;
+    width: 100%;
+    background-color: red;
+    background-image: url(assets/lwork1.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.l-work-2 {
+    flex-grow:1;
+    width: 100%;
+    background-color: red;
+    background-image: url(assets/image1.png);
+    background-size: cover;
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.chevron-block {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chevron-block i {
+    font-size: 24px;
+}
+
+.fift-footer-block p {
+    font-size: 12px;
+}
+
+.sixth-block {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sip-header-block {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 8vw;
+}
+
+.sip-main-page {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.sip-footer-block {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sip-footer-block p {
+    font-size: 12px;
+}
+
+.sip-h1 {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 48px;
+    padding: 10px;
+    border-left-style: solid;
+    padding-left: 15px;
+    border-color: rgb(255, 49, 49);
+    border-width: 4px;
+    font-weight: 400;
+}
+
+.sip-side-block {
+    height: 100%;
+    display: flex;
+    padding-top: calc(15% - 40px);
+}
+
+.sip-side-block i {
+    font-size: 40px;
+}
+
+.sip-body {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.sip-sub-block {
+    height: 100%;
+    width: 30%;
+}
+
+.sip-sub-block div {
+    height: 60%;
+    width: 100%;
+    border-radius: 40px;
+    padding-top: 30px;
+    padding-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sip-sub-block div img {
+    height: 80px;
+}
+
+.sip-sub-block h1 {
+    font-size: 21px;
+    padding: 30px;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+.sip-sub-block p {
+    font-size: 14px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.seventh-page {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/seventh-page-main-image.jpg);
+}
+
+.sev-main-page {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+}
+
+.sev-lft-block {
+    width: 50%;
+    height: 100%;
+    font-family: "Parkinsans", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 6vw;
+    justify-content: center;
+}
+
+.sev-lft-block h1 {
+    font-size: 60px;
+}
+
+.sev-rght-block {
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+}
+
+.sev-rght-block div input {
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 30px;
+    width: 300px;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    outline: none;
+    margin-left: 10px;
+}
+
+.sev-rght-block div button {
+    height: 60px;
+    border-style: none;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+}
+
+.sev-footer-block {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sev-footer-block p {
+    color: white;
+    font-size: 12px;
+}
+
+.social-block {
+    display: flex;
+    align-items: center;
+}
+
+.social-block h2 {
+    font-size: 20px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.social-block i {
+    font-size: 50px;
+    margin-left: 15px;
+}
+
+.main-footer-block {
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.908);
+    display: flex;
+}
+
+.m-footer-1-block {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-footer-1-block p {
+    color: white;
+    font-size: 10px;
+}
+
+.m-footer-2-block {
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-footer-2-block h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: left;
+}
+
+.m-footer-2-block ul {
+    padding: 0;
+}
+
+.m-footer-2-block ul li {
+    list-style-type: none;
+    color: rgb(106, 106, 106);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.m-footer-3-block {
+    height: 100%;
+    flex-grow: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-footer-3-block p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.m-footer-3-block div {
+    border-style: solid;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.m-footer-3-block div i {
+    font-size: 24px;
+    padding: 12px;
+}
+
+.nav-bar-logo-footer {
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-logo-footer h1 {
+    font-size: clamp(5px, 2vw, 120%);
+    line-height: 100%;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-bar-logo-footer img {
+    height: 100%;
+}
+
+.display-block {
+    display: none;
+}
+
+
+
+@media screen and (orientation: portrait) {
+    .sp-header-block {
+        justify-content: center;
+        margin:  30px;
+        padding: 0;
+    }
+
+    .sp-blocks {
+        flex-direction: column;
+    }
+
+    .sp-lft-block {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin-top: 6vw;
+        margin-bottom: 4vw;
+    }
+
+    .sp-rght-block {
+        width: 100%;
+        padding: 14vw;
+        padding-top: 0;
+        padding-bottom: 6vw;
+    }
+
+    .fourth-page {
+        height: 50vh;
+    }
+
+    .fop-rght-block {
+        width: 50%;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fop-lft-block h1 {
+        font-size: 3vw;
+    }
+
+    .fop-lft-block p {
+        font-size: 1.4vw;
+    }
+
+    .fop-lft-block ul li {
+        font-size: 1.4vw;
+    }
+
+    .fop-rght-block img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .fop-sub-block {
+        height: 10vw;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .fop-sub-block p {
+        width: 100%;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .fop-sb-1 {
+        width: 30%;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .fop-sb-1 h1 {
+        margin : 0;
+    }
+
+    .fop-sb-2 {
+        width: 30%;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .fop-sb-2 h1 {
+        margin : 0;
+    }
+
+    .fop-sub-block h1 {
+        font-size: 2vw;
+    }
+
+    .fop-sub-block p {
+        font-size: 0.6vw;
+    }
+
+    .fop-sub-block i {
+        font-size: 1.5vw;
+    }
+
+    .fift-page {
+        height: 150vh;
+    }
+
+    .fift-header-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vw;
+    }
+
+    .fift-header-block h1 {
+        font-size: 8vw;
+    }
+
+    .fift-header-block p {
+        font-size: 4vw;
+    }
+
+    .fift-body {
+        display: flex;
+        flex-direction: column;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .l-work-block-1 {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .l-work-block-2 {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .fift-footer-block {
+        justify-content: flex-start;
+        padding-left: 4vw;
+    }
+
+    .sip-h1 {
+        font-size: 8vw;
+    }
+
+    .sip-sub-block {
+        width: 25vw;
+    }
+
+    .sip-sub-block div {
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: 24vw;
+        border-radius: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sip-main-page div i {
+        font-size: 6vw;
+        padding: 0;
+        margin-left: 4px;
+    }
+
+    .sip-main-page {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .sip-sub-block div img {
+        height: 5vw;
+    }
+
+    .sip-sub-block h1 {
+        font-size: 2vw;
+    }
+
+    .sip-sub-block p {
+        font-size: 1vw;
+    }
+
+    .sixth-block {
+        height: 60vh;
+    }
+
+    .sev-main-page {
+        flex-direction: column;
+    }
+
+    .sev-lft-block {
+        width: 100%;
+    }
+
+    .sev-lft-block h1 {
+        font-size: 8vw;
+    }
+
+    .sev-rght-block {
+        width: 100%;
+    }
+
+    .break-block {
+        display: none;
+    }
+
+    .display-block {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .display-block h1 {
+        font-weight: normal;
+        font-size: 7vw;
+    }
+
+    .social-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-block i {
+        font-size: 8vw;
+    }
+
+    .social-block h2 {
+        font-size: 5vw;
+    }
+
+    .d-bl {
+        display: none;
+    }
+
+    .contact-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-block input {
+        margin: 10px;
+    }
+
+    .seventh-page {
+        height: 100vh;
+    }
+
+    .signbutton {
+        border-radius: 10px;
+    }
+
+    .main-footer-block {
+        flex-wrap: wrap;
+    }
+
+    .m-footer-1-block {
+        width: 50%;
+        height: 20vh;
+    }
+
+    .m-footer-2-block {
+        width: 50%;
+        height: 20vh;
+    }
+
+    .m-footer-3-block {
+        height: 10vh;
+    }
+
+    .cp-edit {
+        margin-top: 20px;
+        font-size: 4vw;
+    }
+
+    .cp1-edit {
+        font-size: 1vw;
+        text-align: center;
+    }
+
+    .m-footer-3-block p {
+        font-size: 4vw;
+    }
+
+}
